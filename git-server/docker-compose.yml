@@ -1,0 +1,7 @@
+services:
+  git-server:
+    image: cirocosta/gitserver-http
+    ports:
+      - 1000:80
+    volumes:
+      - ./files:/var/lib/git
